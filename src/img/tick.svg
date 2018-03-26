@@ -1,0 +1,12 @@
+<svg width="14" height="10" viewBox="0 0 14 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>tick</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1470 -251)">
+<g id="tick">
+<use xlink:href="#path0_fill" transform="translate(1470 251)" fill="#4A90E2"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 4.45518 7.91119L 1.11479 4.7775L 0 5.81957L 4.45518 10L 14 1.04581L 12.8892 0L 4.45518 7.91119Z"/>
+</defs>
+</svg>

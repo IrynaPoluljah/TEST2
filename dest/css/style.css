@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+:focus,
+:active,
+:visited {
+  outline: none;
+  outline-offset: 0;
+  box-shadow: none;
+  border: none; }
+
+a {
+  text-decoration: none; }
+  a:hover, a:focus {
+    outline: none;
+    outline-offset: 0;
+    text-decoration: none; }
+  a:focus {
+    outline: none; }
+
+img {
+  max-width: 100%; }
+
+button {
+  font: inherit;
+  border: none;
+  outline: none; }
+
+input {
+  outline: none;
+  padding: 0; }
+
+input:focus {
+  outline: none;
+  outline-offset: 0; }
+
+label {
+  outline: none;
+  cursor: pointer; }
+
+@font-face {
+  font-family: "SegoeUIRegular";
+  src: url("../fonts/SegoeUIRegular.eot");
+  src: url("../fonts/SegoeUIRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIRegular.woff") format("woff"), url("../fonts/SegoeUIRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "SegoeUIBold";
+  src: url("../fonts/SegoeUIBold.eot");
+  src: url("../fonts/SegoeUIBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIBold.woff") format("woff"), url("../fonts/SegoeUIBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+body {
+  margin: 0;
+  color: #112A48;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  background-color: #F2F2F2; }
+
+.c-form {
+  max-width: 320px;
+  background-color: #fff;
+  padding: 30px 20px 26px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto; }
+
+.c-form__title {
+  font-family: "SegoeUIBold", sans-serif;
+  font-weight: 700;
+  margin-bottom: 5.4375rem;
+  margin-left: .625rem;
+  margin-right: auto;
+  position: relative; }
+  .c-form__title:after {
+    content: "";
+    display: block;
+    background-color: #4A90E2;
+    height: 2px;
+    width: 50px;
+    position: absolute; }
+
+.c-form__input {
+  text-align: center;
+  margin-bottom: 3rem; }
+
+.c-form__sign-in {
+  font-size: 14px;
+  line-height: 1.15em;
+  color: #BDBDBD;
+  text-align: center; }
+
+.c-form__sign-in a {
+  display: block;
+  color: #112A48;
+  margin-top: 4px;
+  text-decoration: underline; }
+  .c-form__sign-in a:hover, .c-form__sign-in a:focus {
+    color: #4A90E2; }
+
+h1 {
+  font-family: "SegoeUIRegular", sans-serif;
+  font-weight: 400;
+  font-family: "SegoeUIBold", sans-serif;
+  font-weight: 700; }
+
+.c-button {
+  min-width: 280px;
+  min-height: 60px;
+  color: #fff;
+  font-size: 17px;
+  padding: 1.125rem 4.6875rem;
+  background-color: #4A90E2;
+  border-radius: 3px;
+  cursor: pointer; }
+
+.c-form .c-button {
+  margin-bottom: 38px; }
+
+.c-button--disabled {
+  background-color: #BDBDBD;
+  cursor: default; }
+
+.c-button:hover,
+.c-button:focus {
+  background-color: #417DC4; }
+
+.c-button:active {
+  background-color: #4A90E2; }
+
+.c-input {
+  min-width: 260px;
+  border: 1px solid transparent;
+  border-bottom-color: #4A90E2;
+  padding: 5px 10px;
+  font-size: 16px; }
+
+.c-input--password:focus {
+  box-shadow: 0 1px 0px 0px #4A90E2; }
+
+.is-empty {
+  border-bottom-color: #4A90E2; }
+
+.is-invalid {
+  border-bottom-color: #FF3939;
+  background-image: url(../img/close.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  color: #FF3939; }
+
+.is-valid {
+  background-image: url(../img/tick.svg);
+  background-repeat: no-repeat;
+  background-position: right; }
+
+.c-input_item {
+  position: relative; }
+
+.c-input_item + .c-input_item {
+  margin-top: 43px; }
+
+.label {
+  position: absolute;
+  font-family: "SegoeUIRegular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #BDBDBD;
+  left: 10px;
+  bottom: 5px;
+  transition: .5s;
+  pointer-events: none; }
+
+.c-input:focus ~ label,
+.c-input:valid ~ label {
+  bottom: 100%;
+  font-size: 12px; }
+
+.c-input:focus ~ label {
+  color: #4A90E2; }
+
+.is-invalid:focus ~ label,
+.is-invalid:invalid ~ label {
+  bottom: 100%;
+  font-size: 12px; }
+
+.c-message {
+  padding: 0 20px;
+  padding-top: 130px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  font-size: 1.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none; }
+
+.c-message__sign {
+  border: 3px solid #619EE6;
+  border-radius: 9999px;
+  width: 98px;
+  height: 98px;
+  z-index: 10;
+  margin-bottom: 40px;
+  position: relative; }
+
+.c-message__sign object {
+  height: 38px;
+  width: 54px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.c-message__text {
+  font-family: "SegoeUIRegular", sans-serif;
+  font-weight: 400;
+  line-height: 1.17em;
+  color: #112A48;
+  text-align: center; }

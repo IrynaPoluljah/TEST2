@@ -1,0 +1,65 @@
+.c-input {
+  min-width: 260px;
+  border: 1px solid transparent;
+  border-bottom-color: $blue;
+  padding: 5px 10px;
+  font-size: $fontSize;
+}
+
+.c-input--password:focus {
+  box-shadow: 0 1px 0px 0px $blue;
+}
+
+.is-empty {
+  border-bottom-color: $blue;
+}
+
+.is-invalid {
+  border-bottom-color: $red;
+  background-image: url(../img/close.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  color: $red;
+}
+
+.is-valid {
+  background-image: url(../img/tick.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.c-input_item {
+  position: relative;
+}
+
+.c-input_item + .c-input_item {
+  margin-top: 43px;
+}
+
+.label {
+  position: absolute;
+  font-family: $fontFamReg;
+  font-weight: $fontRegular;
+  font-size: 16px;
+  color: $grey;
+  left: 10px;
+  bottom: 5px;
+  transition: .5s;
+  pointer-events: none;
+}
+
+.c-input:focus ~ label,
+.c-input:valid ~ label {
+  bottom: 100%;
+  font-size: 12px;
+}
+
+.c-input:focus ~ label {
+  color: $blue;
+}
+
+.is-invalid:focus ~ label,             //для наглядного примера
+.is-invalid:invalid ~ label {
+  bottom: 100%;
+  font-size: 12px;
+}

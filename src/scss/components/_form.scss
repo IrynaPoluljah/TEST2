@@ -1,0 +1,58 @@
+.c-form {
+  max-width: 320px;
+  background-color: $white;
+  padding: 30px 20px 26px;
+  position: relative;
+  @include flex;
+  @include column;
+  @include align-center;
+  margin: 0 auto;
+}
+
+.c-form__title {
+  font-family: $fontFamBold;
+  font-weight: $fontBold;
+  margin-bottom: 5.4375rem;
+  margin-left: .625rem;
+  margin-right: auto;
+  position: relative;
+    &:after {
+      content: "";
+      display: block;
+      background-color: $blue;
+      height: 2px;
+      width: 50px;
+      position: absolute;
+    }
+}
+
+.c-form__input {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.c-form__sign-in {
+  font-size: 14px;
+  line-height: 1.15em;
+  color: $grey;
+  text-align: center;
+}
+
+.c-form__sign-in a {
+  display: block;
+  color: $black;
+  margin-top: 4px;
+  text-decoration: underline;
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
+}
+
+h1 {
+  font-family: $fontFamReg;
+  font-weight: $fontRegular;
+
+  font-family: $fontFamBold;
+  font-weight: $fontBold;
+}

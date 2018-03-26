@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FORM</title>
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <div class="wrapper">
+    <form action="#" class="c-form">
+      <div class="c-message">
+        <div class="c-message__sign">
+          <object type="image/svg+xml" data="img/tick.svg">
+            <img src="img/tick.png" alt="image">
+          </object>
+        </div>
+        <h4 class="c-message__text">На вашу пошту було надіслано лист. Перейдіть за посиланням для активації аккаунту</h4>
+      </div>
+      <div class="c-form__title">
+        <span>Реєстрація</span>
+      </div>
+      <div class="c-form__input">
+        <div class="c-input_item">
+          <input class="c-input is-valid" type="text" name="login" id="user-login" required>
+          <label for="user-login" class="label">Логін</label>
+        </div>
+        <div class="c-input_item">
+          <input class="c-input is-invalid" type="email" name="email" id="user-email" required>
+          <label for="user-email" class="label">Email</label>
+        </div>
+        <div class="c-input_item">
+          <input class="c-input c-input--password is-empty" type="password" name="password" id="user-password" required>
+          <label for="user-password" class="label">Пароль</label>
+        </div>
+        <div class="c-input_item is-empty">
+          <input class="c-input c-input--password is-empty" type="password" name="password" id="user-password-confirm" required>
+          <label for="user-password-confirm" class="label">Повторіть пароль</label>
+        </div>
+        
+        
+        
+        
+      </div>
+      <button class="c-button">Записатися</button>
+      <div class="c-form__sign-in">
+        <span>У вас уже є аккаунт?</span>
+        <a href="#">Увійти</a>
+      </div> 
+    </form>
+  </div>
+  
+
+
+
+</body>
+</html>

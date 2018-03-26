@@ -1,0 +1,29 @@
+.c-button {
+  min-width: 280px;
+  min-height: 60px;
+  color: $white;
+  font-size: $fontSizeMd;
+  padding: 1.125rem 4.6875rem;
+  background-color: $blue;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.c-form .c-button {
+  margin-bottom: 38px;
+}
+
+.c-button--disabled {
+  background-color: $grey;
+  cursor: default;
+}
+
+.c-button:hover,
+.c-button:focus {
+  background-color: $blueDark;
+}
+
+.c-button:active {
+  background-color: $blue;
+}
+
